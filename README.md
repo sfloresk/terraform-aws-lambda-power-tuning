@@ -5,16 +5,10 @@ Terraform module which deploys the AWS lambda power tuning solution
 ## Usage
 
 ```hcl
-module "terraform-aws-lambda-power-tuning" {
-  source  = "terraform-aws-lambda-power-tuning"
-
-  aws_account_id = "11223344556677"
-  aws_region = "us-west-2"
-  lambda_function_prefix = "lambda_power_tuning"
-  role_path_override = ""
-  permissions_boundary = null
-  vpc_subnet_ids = null
-  vpc_security_group_ids = null
+module "lambda-power-tuning" {
+  source  = "sfloresk/lambda-power-tuning/aws"
+  aws_account_id = "1234567890"
+  aws_region = "us-east-2"
 }
   
 ```
