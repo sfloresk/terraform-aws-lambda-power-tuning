@@ -1,6 +1,6 @@
 # AWS Lambda Power Tuning Terraform module
 
-Terraform module which deploys the AWS lambda power tuning solution
+Terraform module which deploys the [Lambda power tuning solution](https://github.com/alexcasalboni/aws-lambda-power-tuning)
 
 ## Usage
 
@@ -8,7 +8,7 @@ Terraform module which deploys the AWS lambda power tuning solution
 module "lambda-power-tuning" {
   source  = "sfloresk/lambda-power-tuning/aws"
   aws_account_id = "1234567890"
-  aws_region = "us-east-2"
+  aws_region = "us-west-2"
 }
   
 ```
@@ -17,19 +17,17 @@ module "lambda-power-tuning" {
 
 - [Complete](https://github.com/sfloresk/terraform-aws-lambda-power-tuning/tree/master/examples/complete) - Example with all variables
 
-<!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13.1 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 4.57 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 4.57 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.0 |
 
 ## Modules
 

@@ -1,3 +1,6 @@
+provider "aws" {
+  region = var.aws_region
+}
 locals {
   defaultPowerValues = "[128,256,512,1024,1536,3008]"
   minRAM             = 128

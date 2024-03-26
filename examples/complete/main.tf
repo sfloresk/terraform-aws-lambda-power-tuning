@@ -1,8 +1,3 @@
-
-provider "aws" {
-  region = local.aws_region
-}
-
 locals {
   aws_region = "us-west-2"
 }
