@@ -365,7 +365,7 @@ resource "aws_lambda_function" "initializer" {
 }
 
 resource "aws_lambda_function" "publisher" {
-  filename      = "../src/app.zip"
+  filename      = ".aws-lambda-power-tuning/src/app.zip"
   function_name = "${var.lambda_function_prefix}-publisher"
   role          = aws_iam_role.publisher_role.arn
   handler       = "publisher.handler"
