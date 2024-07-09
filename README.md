@@ -1,3 +1,6 @@
+## :stop_sign: This module is now deprecated - the official AWS lambda power tuning terraform module can be found at https://registry.terraform.io/modules/aws-ia/lambda-power-tuning/aws/latest :stop_sign:
+
+
 # AWS Lambda Power Tuning Terraform module
 
 Terraform module which deploys the [Lambda power tuning solution](https://github.com/alexcasalboni/aws-lambda-power-tuning)
